@@ -1,113 +1,132 @@
-import Image from 'next/image'
+import Menu from "@/components/Menu";
+import Modal from "@/components/Modal";
+import { getMyMovies, getNowPlaying, getPopularMovies } from "@/services/movie";
+import Image from "next/image";
+import React from "react";
+import MovieList from "./(home)/MovieList";
 
-export default function Home() {
+export const revalidate = 0;
+
+export const Home = async () => {
+  const featuredMovie = await getNowPlaying();
+  const popularMovies = await getPopularMovies();
+  const myMovies = await getMyMovies();
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
+    <main className="">
+      <section className="max-h-full xl:h-screen relative w-full background-gradient xl:bg-none xl:overflow-hidden">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          src={`https://image.tmdb.org/t/p/original${featuredMovie?.backdrop_path}`}
+          alt={featuredMovie?.title || "Movie title"}
+          fill
           priority
+          className="absolute -z-10 object-cover w-full h-screen"
+          sizes="100vw"
+          quality={100}
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <section className="flex flex-col justify-between h-full w-full max-w-7xl mx-auto px-6 pt-6 pb-16 xl:py-8">
+          <header className="flex justify-between xl:hidden">
+            <Menu>
+              <Image
+                src="/menu.svg"
+                alt="Menu"
+                width={26}
+                height={26}
+                className="scale-x-[-1] w-auto h-auto"
+              />
+            </Menu>
+            <Image
+              src="/logo.svg"
+              alt="Liteflix"
+              width={98}
+              height={28}
+              className="w-auto h-auto"
+            />
+            <button>
+              <Image src="/avatar.svg" alt="Profile" width={36} height={36} />
+            </button>
+          </header>
+          <header className="hidden xl:flex xl:justify-between xl:h-10">
+            <div className="flex items-center gap-16">
+              <Image
+                src="/logo.svg"
+                alt="Liteflix"
+                width={113}
+                height={34}
+                className="w-auto h-auto"
+              />
+              <Modal>
+                <Image
+                  src="/plus.svg"
+                  alt="Agregar película"
+                  width={14}
+                  height={14}
+                  className="relative font-bold text-lg"
+                />
+                <span>AGREGAR PELÍCULA</span>
+              </Modal>
+            </div>
+            <div className="flex gap-10">
+              <Menu>
+                <Image
+                  src="/menu.svg"
+                  alt="Menu"
+                  width={26}
+                  height={26}
+                  className="w-auto h-auto"
+                />
+              </Menu>
+              <button className="transition-transform hover:scale-110">
+                <Image
+                  src="/notification.svg"
+                  alt="Notifications"
+                  width={26}
+                  height={26}
+                />
+              </button>
+              <button className="transition-transform hover:scale-110">
+                <Image src="/avatar.svg" alt="Profile" width={40} height={40} />
+              </button>
+            </div>
+          </header>
+          <section className="flex flex-1 flex-col gap-4 h-full justify-end xl:justify-start xl:flex-row">
+            <article className="flex flex-col justify-end pt-20 xl:pt-0 xl:pb-20 w-full overflow-hidden items-center xl:items-start">
+              <h2 className="text-xl mb-4">
+                ORIGINAL DE <b>LITEFLIX</b>
+              </h2>
+              <h1 className="w-full text-7xl xl:text-[120px] text-primary tracking-[12px] xl:tracking-[16px] leading-[77px] xl:leading-[100px] mb-8 overflow-ellipsis overflow-hidden text-center xl:text-left">
+                {featuredMovie?.title}
+              </h1>
+              <div className="flex flex-col xl:flex-row gap-6 py-1">
+                <button className="flex items-center gap-3 text-lg bg-gray-700 w-[248px] px-2 justify-center h-14 transition hover:bg-gray-800 active:bg-gray-900 focus:outline-none focus:bg-gray-900">
+                  <Image
+                    src="/play.svg"
+                    alt="Reproducir"
+                    width={14}
+                    height={14}
+                    className="w-auto h-auto"
+                  />
+                  REPRODUCIR
+                </button>
+                <button className="flex items-center gap-3 text-lg border border-white/50 bg-gray-800/50 w-[248px] px-2 justify-center h-14 transition hover:scale-105 hover:bg-gray-800/75 active:bg-gray-900/75 focus:outline-none">
+                  <Image
+                    src="/plus.svg"
+                    alt="Agregar película"
+                    width={14}
+                    height={14}
+                    className="relative font-bold text-lg"
+                  />
+                  MI LISTA
+                </button>
+              </div>
+            </article>
+            <MovieList className="hidden xl:flex" popularMovies={popularMovies} myMovies={myMovies}/>
+          </section>
+        </section>
+      </section>
+      <MovieList className="xl:hidden flex flex-col w-full items-center gap-4 bg-secondary pb-12 relative py-0" popularMovies={popularMovies} myMovies={myMovies}/>
     </main>
-  )
-}
+  );
+};
+
+export default Home;
