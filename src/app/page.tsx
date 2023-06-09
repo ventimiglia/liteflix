@@ -7,7 +7,7 @@ import MovieList from "./(home)/MovieList";
 
 export const revalidate = 0;
 
-export const Home = async () => {
+export default async function Page() {
   const featuredMovie = await getNowPlaying();
   const popularMovies = await getPopularMovies();
   const myMovies = await getMyMovies();
@@ -120,13 +120,19 @@ export const Home = async () => {
                 </button>
               </div>
             </article>
-            <MovieList className="hidden xl:flex" popularMovies={popularMovies} myMovies={myMovies}/>
+            <MovieList
+              className="hidden xl:flex"
+              popularMovies={popularMovies}
+              myMovies={myMovies}
+            />
           </section>
         </section>
       </section>
-      <MovieList className="xl:hidden flex flex-col w-full items-center gap-4 bg-secondary pb-12 relative py-0" popularMovies={popularMovies} myMovies={myMovies}/>
+      <MovieList
+        className="xl:hidden flex flex-col w-full items-center gap-4 bg-secondary pb-12 relative py-0"
+        popularMovies={popularMovies}
+        myMovies={myMovies}
+      />
     </main>
   );
-};
-
-export default Home;
+}
