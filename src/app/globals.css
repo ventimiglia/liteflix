@@ -31,7 +31,19 @@ button, input {
   letter-spacing: 4px;
 }
 
-.background-gradient {
-  background: linear-gradient(0deg, rgba(36,36,36,1) 15%, rgba(247,247,247,0) 70%);
+.bg-scale {
+  animation: scale-animation 15s infinite;
+}
+
+@keyframes scale-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 

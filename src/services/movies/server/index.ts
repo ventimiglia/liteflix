@@ -52,18 +52,16 @@ export const getPopularMovies = async (): Promise<Movie[]> => {
 
 export const getMyMovies = async (): Promise<Movie[]> => {
   try {
-    const { resources } : { resources: Image[] } = await cloudinary.v2.search
+    const { resources }: { resources: Image[] } = await cloudinary.v2.search
       .expression("folder:movies")
       .execute();
 
     const movies: Movie[] = resources.map((movie: Image) => ({
       id: movie.asset_id,
-      title: movie.public_id.split('/')[1],
+      title: movie.public_id.split("/")[1],
       backdrop_path: movie.url,
-      release_date: new Date(
-        Math.floor(Math.random() * (2023 - 1950 + 1)) + 1950
-      ).getFullYear(),
-      vote_average: Math.random() * (10 - 5) + 5,
+      release_date: Math.floor(Math.random() * (2023 - 1990) + 1990),
+      vote_average: parseFloat((Math.random() * (10 - 5) + 5).toFixed(1)),
     }));
 
     return movies;
