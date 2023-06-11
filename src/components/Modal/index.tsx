@@ -92,6 +92,7 @@ const Modal = ({ children }: { children: ReactNode }) => {
       <AnimatePresence>
         {showModal && (
           <motion.div
+            role="modal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -122,7 +123,7 @@ const Modal = ({ children }: { children: ReactNode }) => {
                   <Menu>
                     <Image
                       src="/menu.svg"
-                      alt="Menu"
+                      alt="open menu"
                       width={26}
                       height={26}
                       className="scale-x-[-1] w-auto h-auto"

@@ -98,11 +98,13 @@ const InputFileIdle = ({
       <span className="hidden lg:inline">O ARRASTRALO Y SOLTALO AQUÍ</span>
     </p>
     <input
+      test-id="file-input"
       type="file"
       accept="image/*"
       className="absolute w-full h-full cursor-pointer opacity-0"
       name="file"
       onChange={onChange}
+      placeholder="Agrega un archivo"
     />
   </label>
 );

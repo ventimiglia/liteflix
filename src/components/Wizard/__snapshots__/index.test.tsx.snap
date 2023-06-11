@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wizard renders the initial step 1`] = `
+<div>
+  <h3
+    class="text-2xl lg:text-xl text-center text-primary mb-[72px] mt-24 lg:mb-12 lg:mt-0"
+  >
+    AGREGAR PELICULA
+  </h3>
+  <form
+    class="flex flex-col items-center lg:gap-12"
+  >
+    <label
+      class="flex items-center relative justify-center gap-4 w-full h-20 lg:h-24 border-2 border-dashed cursor-pointer mb-14 lg:mb-0 transition-colors hover:bg-white/5"
+      id="file"
+    >
+      <img
+        alt="Agregar imagen"
+        data-nimg="1"
+        decoding="async"
+        height="16"
+        loading="lazy"
+        src="/clip.svg"
+        style="color: transparent;"
+        width="16"
+      />
+      <p>
+        <b>
+          AGREGÁ UN ARCHIVO 
+        </b>
+        <span
+          class="hidden lg:inline"
+        >
+          O ARRASTRALO Y SOLTALO AQUÍ
+        </span>
+      </p>
+      <input
+        accept="image/*"
+        class="absolute w-full h-full cursor-pointer opacity-0"
+        name="file"
+        placeholder="Agrega un archivo"
+        test-id="file-input"
+        type="file"
+      />
+    </label>
+    <input
+      class="text-center bg-transparent border-b-2 w-60 mb-24 lg:mb-auto focus:outline-none"
+      id="title"
+      name="title"
+      placeholder="Título"
+    />
+    <button
+      class="w-60 mb-6 bg-white text-secondary text-lg py-4 opacity-30 cursor-not-allowed"
+      disabled=""
+      type="submit"
+    >
+      SUBIR PELICULA
+    </button>
+    <button
+      class="lg:hidden text-lg w-60 border border-white/50 bg-transparent px-2 justify-center h-14 transition hover:scale-105 hover:bg-gray-800/75 active:bg-gray-900/75 focus:outline-none focus:ring focus:ring-gray-500"
+    >
+      SALIR
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Wizard renders the submitted step 1`] = `
+<div>
+  <img
+    alt="logo"
+    class="self-center"
+    data-nimg="1"
+    decoding="async"
+    height="34"
+    loading="lazy"
+    src="./logo.svg"
+    style="color: transparent;"
+    width="113"
+  />
+  <form
+    class="flex flex-col items-center lg:gap-12"
+  >
+    <section
+      class="flex flex-col h-full w-full justify-center items-center text-center mt-12"
+    >
+      <h3
+        class="text-2xl mb-6 font-bold"
+      >
+        ¡FELICITACIONES!
+      </h3>
+      <p
+        class="text-xl"
+      >
+        Test Movie FUE CORRECTAMENTE SUBIDA
+      </p>
+    </section>
+    <button
+      class="w-60 bg-white text-secondary text-lg py-4 transition hover:scale-105 hover:bg-white/80"
+    >
+      <a
+        href="/"
+      >
+        IR A HOME
+      </a>
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Wizard renders the uploading file step 1`] = `
+<div>
+  <h3
+    class="text-2xl lg:text-xl text-center text-primary mb-[72px] mt-24 lg:mb-12 lg:mt-0"
+  >
+    AGREGAR PELICULA
+  </h3>
+  <form
+    class="flex flex-col items-center lg:gap-12"
+  >
+    <div
+      class="flex flex-col w-full gap-4"
+    >
+      <p
+        class="text-left text-sm"
+      >
+        CARGANDO: 50%
+      </p>
+      <div
+        class="w-full bg-gray-200"
+      >
+        <div
+          class="bg-primary h-2"
+          style="width: 50%;"
+        />
+      </div>
+      <button
+        class="text-right"
+      >
+        CANCELAR
+      </button>
+    </div>
+    <input
+      class="text-center bg-transparent border-b-2 w-60 mb-24 lg:mb-auto focus:outline-none"
+      id="title"
+      name="title"
+      placeholder="Título"
+    />
+    <button
+      class="w-60 mb-6 bg-white text-secondary text-lg py-4 opacity-30 cursor-not-allowed"
+      disabled=""
+      type="submit"
+    >
+      SUBIR PELICULA
+    </button>
+    <button
+      class="lg:hidden text-lg w-60 border border-white/50 bg-transparent px-2 justify-center h-14 transition hover:scale-105 hover:bg-gray-800/75 active:bg-gray-900/75 focus:outline-none focus:ring focus:ring-gray-500"
+    >
+      SALIR
+    </button>
+  </form>
+</div>
+`;

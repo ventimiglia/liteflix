@@ -19,6 +19,7 @@ const Menu = ({ children }: { children: ReactNode }) => {
       <AnimatePresence>
         {showMenu && (
           <motion.div
+            role="menu"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -32,23 +33,21 @@ const Menu = ({ children }: { children: ReactNode }) => {
               className="lg:absolute lg:right-0 lg:w-[40%] h-full p-6 lg:py-6 lg:px-20 bg-secondary"
             >
               <header className="flex justify-between w-full gap-10">
-                <Menu>
-                  <Image
-                    src="/plus.svg"
-                    alt="Menu"
-                    width={26}
-                    height={26}
-                    className="rotate-45"
-                    onClick={() => setShowMenu(false)}
-                  />
-                </Menu>
+                <Image
+                  src="/plus.svg"
+                  alt="close menu"
+                  width={26}
+                  height={26}
+                  className="rotate-45 cursor-pointer transition-transform hover:scale-125"
+                  onClick={() => setShowMenu(false)}
+                />
                 <div className="flex flex-grow justify-center lg:justify-end">
                   <Image
                     src="/notification.svg"
                     alt="Notifications"
                     width={26}
                     height={26}
-                    className="hidden lg:flex self-center w-auto h-auto"
+                    className="hidden lg:flex self-center w-auto h-auto cursor-pointer transition-transform hover:scale-125"
                   />
                   <Image
                     src="/logo.svg"
@@ -64,6 +63,7 @@ const Menu = ({ children }: { children: ReactNode }) => {
                     alt="Profile"
                     width={36}
                     height={36}
+                    className="cursor-pointer transition-transform hover:scale-125"
                   />
                 </button>
               </header>

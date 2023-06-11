@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomDropdown Actions opens the dropdown menu when the button is clicked and check snapshot 1`] = `
+<div>
+  <div
+    class="relative inline-block text-left z-10 w-full"
+  >
+    <button
+      class="inline-flex justify-center items-center w-full rounded-md px-4 py-2 bg-transparent text-sm font-medium text-white transition-colors hover:text-white/50"
+      type="button"
+    >
+      <span>
+        VER: 
+        <b>
+          POPULARES
+        </b>
+      </span>
+      <img
+        alt="arrow"
+        class="w-auto h-auto ml-2"
+        data-nimg="1"
+        decoding="async"
+        height="13"
+        loading="lazy"
+        src="/arrow.svg"
+        style="color: transparent;"
+        width="13"
+      />
+    </button>
+    <div
+      class="origin-top-right absolute w-full right-0 mt-2 shadow-lg bg-secondary text-white before:content-[''] before:h-3 before:w-3 before:bg-secondary before:absolute before:-translate-y-1/2 before:right-[15%] before:rotate-45"
+      style="opacity: 0;"
+    >
+      <div
+        aria-labelledby="options-menu"
+        aria-orientation="vertical"
+        class="flex flex-col py-4 gap-4"
+        role="menu"
+      >
+        <button
+          class="flex items-center justify-between px-4 text-sm transition-colors hover:text-white/80 w-full text-left font-bold"
+          role="menuitem"
+        >
+          POPULARES
+          <img
+            alt="arrow"
+            data-nimg="1"
+            decoding="async"
+            height="13"
+            loading="lazy"
+            src="/check.svg"
+            style="color: transparent;"
+            width="13"
+          />
+        </button>
+        <button
+          class="flex items-center justify-between px-4 text-sm transition-colors hover:text-white/80 w-full text-left "
+          role="menuitem"
+        >
+          MIS PELICULAS
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

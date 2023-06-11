@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal opens modal on button click 1`] = `
+<div>
+  <button
+    class="flex items-center gap-3 transition-transform hover:scale-105 focus:scale-105"
+  >
+    Open Modal
+  </button>
+  <div
+    class="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none bg-gray-900/70 focus:outline-none"
+    role="modal"
+    style="opacity: 0;"
+  >
+    <div
+      class="relative w-full lg:min-w-[700px] mx-auto max-w-3xl h-full lg:h-fit"
+      style="z-index: -1;"
+    >
+      <div
+        class="p-6 lg:px-16 lg:py-12 shadow-lg relative flex flex-col w-full bg-secondary outline-none h-full lg:h-fit focus:outline-none"
+      >
+        <a
+          href="/"
+        >
+          <button
+            class="hidden lg:flex absolute top-4 right-4 focus:outline-none transition-transform hover:scale-150"
+          >
+            <img
+              alt="Cerrar"
+              class="rotate-45"
+              data-nimg="1"
+              decoding="async"
+              height="24"
+              loading="lazy"
+              src="/plus.svg"
+              style="color: transparent;"
+              width="24"
+            />
+          </button>
+        </a>
+        <header
+          class="flex justify-between lg:hidden"
+        >
+          <button
+            class="flex items-center gap-3 transition-transform hover:scale-125 focus:scale-125"
+          >
+            <img
+              alt="open menu"
+              class="scale-x-[-1] w-auto h-auto"
+              data-nimg="1"
+              decoding="async"
+              height="26"
+              loading="lazy"
+              src="/menu.svg"
+              style="color: transparent;"
+              width="26"
+            />
+          </button>
+          <img
+            alt="Liteflix"
+            class="w-auto h-auto"
+            data-nimg="1"
+            decoding="async"
+            height="28"
+            loading="lazy"
+            src="/logo.svg"
+            style="color: transparent;"
+            width="98"
+          />
+          <button>
+            <img
+              alt="Profile"
+              data-nimg="1"
+              decoding="async"
+              height="36"
+              loading="lazy"
+              src="/avatar.svg"
+              style="color: transparent;"
+              width="36"
+            />
+          </button>
+        </header>
+        <h3
+          class="text-2xl lg:text-xl text-center text-primary mb-[72px] mt-24 lg:mb-12 lg:mt-0"
+        >
+          AGREGAR PELICULA
+        </h3>
+        <form
+          class="flex flex-col items-center lg:gap-12"
+        >
+          <label
+            class="flex items-center relative justify-center gap-4 w-full h-20 lg:h-24 border-2 border-dashed cursor-pointer mb-14 lg:mb-0 transition-colors hover:bg-white/5"
+            id="file"
+          >
+            <img
+              alt="Agregar imagen"
+              data-nimg="1"
+              decoding="async"
+              height="16"
+              loading="lazy"
+              src="/clip.svg"
+              style="color: transparent;"
+              width="16"
+            />
+            <p>
+              <b>
+                AGREGÁ UN ARCHIVO 
+              </b>
+              <span
+                class="hidden lg:inline"
+              >
+                O ARRASTRALO Y SOLTALO AQUÍ
+              </span>
+            </p>
+            <input
+              accept="image/*"
+              class="absolute w-full h-full cursor-pointer opacity-0"
+              name="file"
+              placeholder="Agrega un archivo"
+              test-id="file-input"
+              type="file"
+            />
+          </label>
+          <input
+            class="text-center bg-transparent border-b-2 w-60 mb-24 lg:mb-auto focus:outline-none"
+            id="title"
+            name="title"
+            placeholder="Título"
+          />
+          <button
+            class="w-60 mb-6 bg-white text-secondary text-lg py-4 opacity-30 cursor-not-allowed"
+            disabled=""
+            type="submit"
+          >
+            SUBIR PELICULA
+          </button>
+          <button
+            class="lg:hidden text-lg w-60 border border-white/50 bg-transparent px-2 justify-center h-14 transition hover:scale-105 hover:bg-gray-800/75 active:bg-gray-900/75 focus:outline-none focus:ring focus:ring-gray-500"
+          >
+            SALIR
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

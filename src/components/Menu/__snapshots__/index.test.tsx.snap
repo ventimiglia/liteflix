@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu opens the menu when the button is clicked 1`] = `
+<div>
+  <button
+    class="flex items-center gap-3 transition-transform hover:scale-125 focus:scale-125"
+  >
+    Open Menu
+  </button>
+  <div
+    class="h-full overflow-y-hidden overflow-x-hidden lg:overflow-y-auto fixed inset-0 z-50 w-full outline-none bg-gray-900/70 focus:outline-none"
+    role="menu"
+    style="opacity: 0;"
+  >
+    <section
+      class="lg:absolute lg:right-0 lg:w-[40%] h-full p-6 lg:py-6 lg:px-20 bg-secondary"
+      style="transform: translateX(100%) translateZ(0);"
+    >
+      <header
+        class="flex justify-between w-full gap-10"
+      >
+        <img
+          alt="close menu"
+          class="rotate-45 cursor-pointer transition-transform hover:scale-125"
+          data-nimg="1"
+          decoding="async"
+          height="26"
+          loading="lazy"
+          src="/plus.svg"
+          style="color: transparent;"
+          width="26"
+        />
+        <div
+          class="flex flex-grow justify-center lg:justify-end"
+        >
+          <img
+            alt="Notifications"
+            class="hidden lg:flex self-center w-auto h-auto cursor-pointer transition-transform hover:scale-125"
+            data-nimg="1"
+            decoding="async"
+            height="26"
+            loading="lazy"
+            src="/notification.svg"
+            style="color: transparent;"
+            width="26"
+          />
+          <img
+            alt="Liteflix"
+            class="w-auto h-auto self-center lg:hidden"
+            data-nimg="1"
+            decoding="async"
+            height="28"
+            loading="lazy"
+            src="/logo.svg"
+            style="color: transparent;"
+            width="98"
+          />
+        </div>
+        <button>
+          <img
+            alt="Profile"
+            class="cursor-pointer transition-transform hover:scale-125"
+            data-nimg="1"
+            decoding="async"
+            height="36"
+            loading="lazy"
+            src="/avatar.svg"
+            style="color: transparent;"
+            width="36"
+          />
+        </button>
+      </header>
+      <nav
+        class="py-16"
+      >
+        <ul
+          class="flex flex-col gap-10 text-left"
+        >
+          <li>
+            <a
+              href="#"
+            >
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Series
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Películas
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Aregadas recientemente
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Populares
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Mis películas
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Mi lista
+            </a>
+          </li>
+          <li
+            class="my-6"
+          >
+            <button
+              class="flex items-center gap-3 transition-transform hover:scale-105 focus:scale-105"
+            >
+              <img
+                alt="Agregar película"
+                class="relative font-bold text-lg"
+                data-nimg="1"
+                decoding="async"
+                height="14"
+                loading="lazy"
+                src="/plus.svg"
+                style="color: transparent;"
+                width="14"
+              />
+              <b>
+                AGREGAR PELÍCULA
+              </b>
+            </button>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Cerrar sesión
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+</div>
+`;

@@ -29,7 +29,7 @@ export default async function Page() {
             <Menu>
               <Image
                 src="/menu.svg"
-                alt="Menu"
+                alt="open menu"
                 width={26}
                 height={26}
                 className="scale-x-[-1] w-auto h-auto"
@@ -70,7 +70,7 @@ export default async function Page() {
               <Menu>
                 <Image
                   src="/menu.svg"
-                  alt="Menu"
+                  alt="open menu"
                   width={26}
                   height={26}
                   className="w-auto h-auto "

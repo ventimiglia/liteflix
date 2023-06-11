@@ -1,5 +1,4 @@
 import React from "react";
-// import '@testing-library/jest-dom'
 
 import { render, fireEvent } from "@testing-library/react";
 import CustomDropdown from "./";
@@ -19,14 +18,15 @@ describe("CustomDropdown", () => {
   });
 
   describe("Actions", () => {
-    it("opens the dropdown menu when the button is clicked", () => {
-      const { getByText } = render(<CustomDropdown {...defaultProps} />);
+    it("opens the dropdown menu when the button is clicked and check snapshot", () => {
+      const { container, getByText } = render(<CustomDropdown {...defaultProps} />);
       const dropdownButton = getByText(CATEGORY.POPULAR);
 
       fireEvent.click(dropdownButton);
 
       const dropdownMenu = getByText(CATEGORY.MY_MOVIES);
       expect(dropdownMenu).toBeInTheDocument();
+      expect(container).toMatchSnapshot();
     });
 
     it("selects a category when an option is clicked", () => {
