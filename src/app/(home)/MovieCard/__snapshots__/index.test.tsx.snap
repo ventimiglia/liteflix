@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCard renders the movie card with default state 1`] = `
+<div>
+  <article
+    class="flex flex-col justify-between gap-4 w-80 lg:w-56 h-44 lg:h-36 relative rounded-md p-3 lg:min-h-[9rem] bg-gradient-card transition-all"
+  >
+    <img
+      alt="Test Movie"
+      class="absolute -z-10 object-cover w-full h-full rounded-md"
+      data-nimg="fill"
+      decoding="async"
+      fetchpriority="high"
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 360px"
+      src="/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=3840&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginaltest.jpg&w=3840&q=75 3840w"
+      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+    />
+    <div
+      class="w-10 h-10 border border-white rounded-full bg-transparent self-center relative top-1/2 -translate-y-1/2"
+    >
+      <img
+        alt="Reproducir"
+        class="w-auto h-auto relative top-1/2 left-1/2 transform -translate-x-[35%] -translate-y-1/2"
+        data-nimg="1"
+        decoding="async"
+        height="14"
+        loading="lazy"
+        src="/play.svg"
+        style="color: transparent;"
+        width="14"
+      />
+    </div>
+    <h3
+      class="text-center w-full overflow-ellipsis whitespace-nowrap overflow-hidden"
+      style="opacity: 0; transform: translateY(100%) translateZ(0);"
+    >
+      Test Movie
+    </h3>
+  </article>
+</div>
+`;

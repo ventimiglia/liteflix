@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieList renders a message when there are no movies in the selected category 1`] = `
+<div>
+  <aside
+    class="animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
+  >
+    <div
+      class="relative inline-block text-left z-10 w-full"
+    >
+      <button
+        class="inline-flex justify-center items-center w-full rounded-md px-4 py-2 bg-transparent text-sm font-medium text-white transition-colors hover:text-white/50"
+        type="button"
+      >
+        <span>
+          VER: 
+          <b>
+            POPULARES
+          </b>
+        </span>
+        <img
+          alt="arrow"
+          class="w-auto h-auto ml-2"
+          data-nimg="1"
+          decoding="async"
+          height="13"
+          loading="lazy"
+          src="/arrow.svg"
+          style="color: transparent;"
+          width="13"
+        />
+      </button>
+    </div>
+    <p
+      class="text-white text-center"
+    >
+      No hay peliculas
+    </p>
+  </aside>
+</div>
+`;
+
+exports[`MovieList renders the movie list with my movies when selected 1`] = `
+<div>
+  <aside
+    class="animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
+  >
+    <div
+      class="relative inline-block text-left z-10 w-full"
+    >
+      <button
+        class="inline-flex justify-center items-center w-full rounded-md px-4 py-2 bg-transparent text-sm font-medium text-white transition-colors hover:text-white/50"
+        type="button"
+      >
+        <span>
+          VER: 
+          <b>
+            MIS PELICULAS
+          </b>
+        </span>
+        <img
+          alt="arrow"
+          class="w-auto h-auto ml-2"
+          data-nimg="1"
+          decoding="async"
+          height="13"
+          loading="lazy"
+          src="/arrow.svg"
+          style="color: transparent;"
+          width="13"
+        />
+      </button>
+      <div
+        class="origin-top-right absolute w-full right-0 mt-2 shadow-lg bg-secondary text-white before:content-[''] before:h-3 before:w-3 before:bg-secondary before:absolute before:-translate-y-1/2 before:right-[15%] before:rotate-45"
+        style="opacity: 0;"
+      >
+        <div
+          aria-labelledby="options-menu"
+          aria-orientation="vertical"
+          class="flex flex-col py-4 gap-4"
+          role="menu"
+        >
+          <button
+            class="flex items-center justify-between px-4 text-sm transition-colors hover:text-white/80 w-full text-left font-bold"
+            role="menuitem"
+          >
+            POPULARES
+            <img
+              alt="arrow"
+              data-nimg="1"
+              decoding="async"
+              height="13"
+              loading="lazy"
+              src="/check.svg"
+              style="color: transparent;"
+              width="13"
+            />
+          </button>
+          <button
+            class="flex items-center justify-between px-4 text-sm transition-colors hover:text-white/80 w-full text-left "
+            role="menuitem"
+          >
+            MIS PELICULAS
+          </button>
+        </div>
+      </div>
+    </div>
+    <article
+      class="flex flex-col justify-between gap-4 w-80 lg:w-56 h-44 lg:h-36 relative rounded-md p-3 lg:min-h-[9rem] bg-gradient-card transition-all"
+    >
+      <img
+        alt="Movie 3"
+        class="absolute -z-10 object-cover w-full h-full rounded-md"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 360px"
+        src="/_next/image?url=%2Fbackdrop3.jpg&w=3840&q=75"
+        srcset="/_next/image?url=%2Fbackdrop3.jpg&w=256&q=75 256w, /_next/image?url=%2Fbackdrop3.jpg&w=384&q=75 384w, /_next/image?url=%2Fbackdrop3.jpg&w=640&q=75 640w, /_next/image?url=%2Fbackdrop3.jpg&w=750&q=75 750w, /_next/image?url=%2Fbackdrop3.jpg&w=828&q=75 828w, /_next/image?url=%2Fbackdrop3.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fbackdrop3.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fbackdrop3.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fbackdrop3.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fbackdrop3.jpg&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+      <div
+        class="w-10 h-10 border border-white rounded-full bg-transparent self-center relative top-1/2 -translate-y-1/2"
+      >
+        <img
+          alt="Reproducir"
+          class="w-auto h-auto relative top-1/2 left-1/2 transform -translate-x-[35%] -translate-y-1/2"
+          data-nimg="1"
+          decoding="async"
+          height="14"
+          loading="lazy"
+          src="/play.svg"
+          style="color: transparent;"
+          width="14"
+        />
+      </div>
+      <h3
+        class="text-center w-full overflow-ellipsis whitespace-nowrap overflow-hidden"
+        style="opacity: 0; transform: translateY(100%) translateZ(0);"
+      >
+        Movie 3
+      </h3>
+    </article>
+  </aside>
+</div>
+`;
+
+exports[`MovieList renders the movie list with popular movies by default 1`] = `
+<div>
+  <aside
+    class="animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
+  >
+    <div
+      class="relative inline-block text-left z-10 w-full"
+    >
+      <button
+        class="inline-flex justify-center items-center w-full rounded-md px-4 py-2 bg-transparent text-sm font-medium text-white transition-colors hover:text-white/50"
+        type="button"
+      >
+        <span>
+          VER: 
+          <b>
+            POPULARES
+          </b>
+        </span>
+        <img
+          alt="arrow"
+          class="w-auto h-auto ml-2"
+          data-nimg="1"
+          decoding="async"
+          height="13"
+          loading="lazy"
+          src="/arrow.svg"
+          style="color: transparent;"
+          width="13"
+        />
+      </button>
+    </div>
+    <article
+      class="flex flex-col justify-between gap-4 w-80 lg:w-56 h-44 lg:h-36 relative rounded-md p-3 lg:min-h-[9rem] bg-gradient-card transition-all"
+    >
+      <img
+        alt="Movie 1"
+        class="absolute -z-10 object-cover w-full h-full rounded-md"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 360px"
+        src="/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop1.jpg&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+      <div
+        class="w-10 h-10 border border-white rounded-full bg-transparent self-center relative top-1/2 -translate-y-1/2"
+      >
+        <img
+          alt="Reproducir"
+          class="w-auto h-auto relative top-1/2 left-1/2 transform -translate-x-[35%] -translate-y-1/2"
+          data-nimg="1"
+          decoding="async"
+          height="14"
+          loading="lazy"
+          src="/play.svg"
+          style="color: transparent;"
+          width="14"
+        />
+      </div>
+      <h3
+        class="text-center w-full overflow-ellipsis whitespace-nowrap overflow-hidden"
+        style="opacity: 0; transform: translateY(100%) translateZ(0);"
+      >
+        Movie 1
+      </h3>
+    </article>
+    <article
+      class="flex flex-col justify-between gap-4 w-80 lg:w-56 h-44 lg:h-36 relative rounded-md p-3 lg:min-h-[9rem] bg-gradient-card transition-all"
+    >
+      <img
+        alt="Movie 2"
+        class="absolute -z-10 object-cover w-full h-full rounded-md"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 360px"
+        src="/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fbackdrop2.jpg&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+      <div
+        class="w-10 h-10 border border-white rounded-full bg-transparent self-center relative top-1/2 -translate-y-1/2"
+      >
+        <img
+          alt="Reproducir"
+          class="w-auto h-auto relative top-1/2 left-1/2 transform -translate-x-[35%] -translate-y-1/2"
+          data-nimg="1"
+          decoding="async"
+          height="14"
+          loading="lazy"
+          src="/play.svg"
+          style="color: transparent;"
+          width="14"
+        />
+      </div>
+      <h3
+        class="text-center w-full overflow-ellipsis whitespace-nowrap overflow-hidden"
+        style="opacity: 0; transform: translateY(100%) translateZ(0);"
+      >
+        Movie 2
+      </h3>
+    </article>
+  </aside>
+</div>
+`;
