@@ -18,8 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Analytics />
-      <body className={bebasNeue.className}>{children}</body>
+      <body className={bebasNeue.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
