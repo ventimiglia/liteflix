@@ -3,7 +3,7 @@
 exports[`MovieList renders a message when there are no movies in the selected category 1`] = `
 <div>
   <aside
-    class="animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
+    class="lg:animate-fade-left lg:animate-once lg:animate-delay-1000 lg:animate-ease-linear lg:animate-normal lg:animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
   >
     <div
       class="relative inline-block text-left z-10 w-full"
@@ -43,7 +43,7 @@ exports[`MovieList renders a message when there are no movies in the selected ca
 exports[`MovieList renders the movie list with my movies when selected 1`] = `
 <div>
   <aside
-    class="animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
+    class="lg:animate-fade-left lg:animate-once lg:animate-delay-1000 lg:animate-ease-linear lg:animate-normal lg:animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
   >
     <div
       class="relative inline-block text-left z-10 w-full"
@@ -148,7 +148,7 @@ exports[`MovieList renders the movie list with my movies when selected 1`] = `
 exports[`MovieList renders the movie list with popular movies by default 1`] = `
 <div>
   <aside
-    class="animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
+    class="lg:animate-fade-left lg:animate-once lg:animate-delay-1000 lg:animate-ease-linear lg:animate-normal lg:animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] undefined"
   >
     <div
       class="relative inline-block text-left z-10 w-full"

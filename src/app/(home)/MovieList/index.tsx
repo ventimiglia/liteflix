@@ -22,7 +22,7 @@ const MovieList = ({ popularMovies, myMovies, className }: Props) => {
     selectedCategory === CATEGORY.POPULAR ? popularMovies : myMovies;
   return (
     <aside
-      className={`animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] ${className}`}
+      className={`lg:animate-fade-left lg:animate-once lg:animate-delay-1000 lg:animate-ease-linear lg:animate-normal lg:animate-fill-both flex-col z-0 items-center justify-start h-full self-center w-56 min-w-max py-6 gap-4 overflow-y-auto overflow-x-hidden lg:max-h-[46rem] ${className}`}
     >
       <CustomDropdown
         selectedCategory={selectedCategory}

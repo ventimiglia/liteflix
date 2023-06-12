@@ -91,11 +91,11 @@ export default async function Page() {
           </header>
           <section className="flex flex-1 flex-col gap-4 h-full justify-end lg:justify-start lg:flex-row">
             <article className="flex flex-col justify-end pt-20 lg:pt-0 lg:pb-20 w-full overflow-hidden items-center lg:items-start">
-              <h2 className="text-xl mb-4animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both">
+              <h2 className="text-xl mb-4 animate-fade-left animate-once animate-delay-1000 animate-ease-linear animate-normal animate-fill-both">
                 ORIGINAL DE <b>LITEFLIX</b>
               </h2>
               <h1
-                className="animate-fade-right animate-once w-full text-7xl lg:text-[120px] text-primary tracking-[12px] lg:tracking-[16px] leading-[77px] lg:leading-[100px] mb-8 overflow-ellipsis overflow-hidden text-center lg:text-left"
+                className="animate-fade-right animate-once animate-duration-[2000ms] animate-delay-1000 w-full text-7xl lg:text-[120px] text-primary tracking-[12px] lg:tracking-[16px] leading-[77px] lg:leading-[100px] mb-8 overflow-ellipsis overflow-hidden text-center lg:text-left"
               >
                 {featuredMovie?.title}
               </h1>
