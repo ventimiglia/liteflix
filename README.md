@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Liteflix Challenge
 
-## Getting Started
+Este proyecto es un catálogo de películas dinámico desarrollado con Next.js, Tailwind, TypeScript, Cloudinary y animaciones con Framer Motion.
 
-First, run the development server:
+## Requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Antes de comenzar con el proyecto, asegúrate de tener instalados los siguientes elementos:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Node.js](https://nodejs.org) (versión 14 o superior)
+- [npm](https://www.npmjs.com/) o [Yarn](https://yarnpkg.com/) (se recomienda Yarn)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Configuración del proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
-## Learn More
+1. Clona este repositorio en tu máquina local o descárgalo como archivo ZIP.
 
-To learn more about Next.js, take a look at the following resources:
+2. Abre una terminal y navega hasta la carpeta raíz del proyecto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Instala las dependencias del proyecto ejecutando el siguiente comando:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```shell
+   npm install
+   ```
 
-## Deploy on Vercel
+   o
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```shell
+   yarn install
+   ```
+4. Se debe crear un archivo `.env.local` en el directorio raíz del proyecto, si se desea, solicitar las envs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+5. Una vez completada la instalación de las dependencias, puedes ejecutar el proyecto con el siguiente comando:
+
+   ```shell
+   npm run dev
+   ```
+
+   o
+
+   ```shell
+   yarn dev
+   ```
+
+   Esto iniciará el servidor de desarrollo y podrás acceder al proyecto en tu navegador en la dirección que indique la consola.
+   
+## Estructura del proyecto
+ ```shell
+├── app            # Pagina y componentes que se renderizan del lado del servidor
+     ├── api              #  Api's del lado del servidor
+├── components     # Componentes que se crean del lado del cliente
+├── services       # Archivos con funciones que conectan a los distintos endpoints
+   ```
